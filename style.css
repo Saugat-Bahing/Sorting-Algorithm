@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(41, 80, 80);
+}
+
+.section {
+    height: 85%;
+    width: 80%;
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    display: flex;
+}
+
+.bar {
+    margin: 0.2%;
+    width: 1%;
+    background-color: rgb(16, 219, 219);
+}
+
+.main {
+    height: 15%;
+    width: 100%;
+    background-color: rgb(7, 51, 54);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.slider label {
+    color: white;
+    font-size: 20px;
+}
+
+
+.slider input {
+    position: relative;
+    top: 3px;
+    left: 2px;
+}
+
+.sort button {
+    width: 100px;
+    height: 30px;;
+    background-color: rgb(77, 215, 240);
+    border: 2px solid rgb(7, 240, 248);
+    border-radius: 4px;
+}
+
+.reset button {
+    width: 200px;
+    height: 30px;;
+    background-color: rgb(77, 215, 240);
+    border: 2px solid rgb(7, 240, 248);
+    border-radius: 4px;
+}
+
+@media screen  and (max-width:500px) {
+    .slider label {
+        font-size: 15px;
+    }
+    
+    
+    .slider input {
+        width: 100px;
+    }
+    
+    .sort button {
+        width: 50px;
+        height: 25px;;
+    }
+    
+    .reset button {
+        width: 100px;
+        height: 30px;
+    }
+}
+
+
