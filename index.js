@@ -1,10 +1,11 @@
 var randomNo = Math.random();
-let arr = [];
-let aniArr=[];
+var arr = [];
 const section = document.getElementById("section");
 const slider = document.getElementById("slider");
+const sort = document.getElementById("click");
+const genNewArr = document.getElementById("reset");
 console.log(section.childNodes)
-let numOfBars=slider.value;
+var numOfBars=slider.value;
 console.log(numOfBars);
 
 
@@ -43,8 +44,9 @@ function deleteDivs(){
     }
 }
 function compare(i){
+    let b;
     if(arr[i]>arr[i+1]){
-        var b=arr[i+1];
+        b=arr[i+1];
         arr[i+1]=arr[i];
         arr[i]=b;
         section.insertBefore(section.childNodes[i+1], section.childNodes[i]);        
@@ -53,16 +55,29 @@ function compare(i){
 
 
 function max(arr){
+    sort.disabled = true;
+    genNewArr.disabled=true;
     for(let j=0; j<arr.length; j++){
         setTimeout(() => {
             for(let i=0; i<arr.length; i++){
                 setTimeout(() => {  
                     compare(i); 
                 }, (i+1)*5);        
-            }    
+            } 
+        if(j+1==arr.length){
+            enablebtns();
+        }   
         }, (j+1)*20);
     }
 }
+
+function enablebtns(){
+    sort.disabled = false;
+    genNewArr.disabled= false;  
+
+   }
+
+
 
 createDivs();
 let btn = document.getElementById("click");
