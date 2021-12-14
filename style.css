@@ -6,6 +6,8 @@
 body {
     width: 100vw;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
     background-color: rgb(41, 80, 80);
 }
 
@@ -61,7 +63,7 @@ body {
     border-radius: 4px;
 }
 
-@media screen  and (max-width:800px) {
+@media screen  and (max-width:500px) {
     .slider label {
         font-size: 15px;
     }
@@ -72,13 +74,18 @@ body {
     }
     
     .sort button {
-        width: 50px;
-        height: 25px;;
+        width: 60px;
+        height: 30px;;
     }
     
     .reset button {
-        width: 100px;
-        height: 30px;
+        width: 105px;
+        height: 40px;
+    }
+    .section {
+        height: 85%;
+        width: 80%;
+        top: 15%;
     }
 }
 
