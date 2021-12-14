@@ -57,6 +57,7 @@ function compare(i){
 function max(arr){
     sort.disabled = true;
     genNewArr.disabled=true;
+    slider.disabled=true;
     for(let j=0; j<arr.length; j++){
         setTimeout(() => {
             for(let i=0; i<arr.length; i++){
@@ -74,7 +75,7 @@ function max(arr){
 function enablebtns(){
     sort.disabled = false;
     genNewArr.disabled= false;  
-
+    slider.disabled=false;
    }
 
 
