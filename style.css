@@ -84,7 +84,7 @@ body {
     }
     .section {
         height: 85vh;
-        bottom: 0;
+        top: 15vh;
     }
     .main {
         height: 15vh;
